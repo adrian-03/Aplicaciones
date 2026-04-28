@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ticket de salida — Semana 2, Sesión 1. Ejercicio de cierre grupal.">
+  <title>Ticket de Salida — Semana 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  TICKET DE SALIDA — Semana 2, Sesión 1                     ║
+  ║  IS-403 — Aplicaciones para el Cliente Web                 ║
+  ║                                                            ║
+  ║  INSTRUCCIONES:                                            ║
+  ║  1. Trabajen en su equipo de 3 (mismos del proyecto).      ║
+  ║  2. Tienen 20 minutos.                                     ║
+  ║  3. Completen los 3 retos de abajo directamente en este    ║
+  ║     archivo, reemplazando los comentarios "TODO".          ║
+  ║  4. Cuando terminen, llamen al docente para que valide     ║
+  ║     su resultado EN PANTALLA antes de que se vayan.        ║
+  ║  5. NO copien del portafolio-final.html — la idea es que   ║
+  ║     lo hagan de memoria con lo aprendido hoy.              ║
+  ╚══════════════════════════════════════════════════════════════╝
+  -->
+
+  <header>
+    <h1>Ficha de inscripción — Hackathon ULEAM 2024</h1>
+  </header>
+
+  <main>
+    <section id="inscripcion">
+  <h2>Inscripción</h2>
+
+  <form action="#" method="post" aria-label="Formulario de inscripción al Hackathon ULEAM 2026">
+    <fieldset>
+      <legend>Formulario de inscripción</legend>
+
+      <!--Nombre del equipo-->
+      <label for="equipo">Nombre del equipo</label>
+      <input type="text" id="equipo" name="equipo" minlength="3" required>
+      <br><br>
+
+      <!--Correo del líder-->
+      <label for="correo">Correo del líder</label>
+      <input type="email" id="correo" name="correo" required>
+      <br><br>
+
+      <!--Número de integrantes-->
+      <label for="integrantes">Número de integrantes</label>
+      <input type="number" id="integrantes" name="integrantes" min="1" max="5" required>
+      <br><br>
+
+      <!--Categoría-->
+      <label for="categoria">Categoría</label>
+      <select id="categoria" name="categoria" required>
+        <option value="">Seleccione una categoría</option>
+        <option value="WEB">WEB</option>
+        <option value="Movil">Móvil</option>
+        <option value="IA">IA</option>
+      </select>
+      <br><br>
+
+      <!--Botón-->
+      <button type="submit">Inscribirse</button>
+    </fieldset>
+  </form>
+</section>
+<section id="premios">
+  <h2>Premios</h2>
+
+  <table>
+    <caption>Premios del Hackathon ULEAM 2026</caption>
+    <thead>
+      <tr>
+        <th scope="col">Puesto</th>
+        <th scope="col">Categoría</th>
+        <th scope="col">Premio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1°</td>
+        <td>WEB</td>
+        <td rowspan="2">Laptop + Certificado</td>
+      </tr>
+      <tr>
+        <td>1°</td>
+        <td>Móvil</td>
+        <!-- Premio compartido con la fila anterior gracias al rowspan -->
+      </tr>
+      <tr>
+        <td>1°</td>
+        <td>IA</td>
+        <td>Tablet + Certificado</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">* Todos los ganadores recibirán un certificado digital.</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+<section id="imagen-evento" aria-label="Banner del evento Hackathon ULEAM 2026">
+  <h2>Sobre el evento</h2>
+  <img src="https://www.shutterstock.com/image-vector/modern-hackathon-vector-logo-coding-260nw-2613131441.jpg"
+       alt="Banner del Hackathon ULEAM 2026 con texto ilustrativo"
+       width="400" height="500">
+</section>
+
+<section id="contacto">
+  <h2>Formulario de contacto</h2>
+  <form action="#" method="post" aria-label="Formulario de contacto">
+    <fieldset>
+      <legend>Datos personales</legend>
+      <p>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="Ej: Juan Pérez">
+      </p>
+      <p>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+      </p>
+      <p>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" title="Ingresa 10 dígitos sin espacios" placeholder="0999999999">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tu mensaje</legend>
+      <p>
+        <label for="asunto">Asunto:</label>
+        <select id="asunto" name="asunto" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="colaboracion">Propuesta de colaboración</option>
+          <option value="trabajo">Oferta de trabajo</option>
+          <option value="consulta">Consulta general</option>
+          <option value="otro">Otro</option>
+        </select>
+      </p>
+      <p>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="40" required minlength="30" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+      </p>
+    </fieldset>
+
+    <!-- Input creativo -->
+    <p>
+      <input type="checkbox" id="acepto" name="acepto" required>
+      <label for="acepto">Acepto que se almacenen mis datos.</label>
+    </p>
+
+    <p>
+      <button type="submit">Enviar mensaje</button>
+      <button type="reset">Limpiar</button>
+    </p>
+  </form>
+</section>
+<section id="habilidades">
+  <h2>Habilidades del equipo</h2>
+  <table>
+    <caption>Habilidades técnicas del equipo — Actualizado abril 2026</caption>
+    <thead>
+      <tr>
+        <th scope="col">Categoría</th>
+        <th scope="col">Tecnología</th>
+        <th scope="col">Nivel</th>
+        <th scope="col">Años</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Herramientas</td>
+        <td>Git / GitHub</td>
+        <td>Intermedio</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th scope="row" rowspan="3">Lenguajes</th>
+        <td>HTML5</td>
+        <td>Intermedio</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Básico</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Intermedio</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Última actualización: abril 2026 — Equipo: [nombres]</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+<section id="imagenes">
+  <h2>Imágenes del equipo</h2>
+  <img src="https://thumbs.dreamstime.com/b/se%C3%B1ora-joven-hermosa-en-fondo-pardusco-128392593.jpg" alt="Foto de Juan  Pérez, integrante del equipo" width="200" height="200">
+  <img src="https://plus.unsplash.com/premium_photo-1682096259050-361e2989706d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8am92ZW58ZW58MHx8MHx8fDA%3D" alt="Foto de Maria López, integrante del equipo" width="200" height="200">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjy5sQ8nq1IpNYW2_Wu7hAhClMM7s4mZBj4A&s" alt="" width="200" height="200">
+</section>
+  </main>
+
+
+

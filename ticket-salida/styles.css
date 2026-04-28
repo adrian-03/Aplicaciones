@@ -1,0 +1,21 @@
+body {
+ background-color: #ffffff; /* color azul claro*/
+ font-family: Arial, sans-serif;
+
+}
+h1 {
+ color: #090909; /* color gris oscuro */
+ text-align: center;
+ margin-top: 20px;
+}
+
+h2{
+    color: rgb(217, 217, 229); /* color azul marino */
+    text-transform:uppercase;
+
+}
+/*Todas las tablas*/
+table {
+  border-collapse: collapse;
+    width: 100%;
+}
